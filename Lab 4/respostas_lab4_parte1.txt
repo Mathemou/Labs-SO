@@ -1,0 +1,19 @@
+A)
+    1.
+
+    a - Porque quer que as threads assumam os parametros padrão, não se passa nada para suas rotinas e não se se espera nada à ser feito com seu retorno.
+
+    b - Não, observando apenas as saídas, não.
+
+    c - Mudou que ambas imprimiram o Hello e depois de um tempo, ambas imprimiram o Ending, o que prova que estão rodando em paralelo.
+
+    2.
+
+    a - Enquanto a thread geradora fala "Your turn!" 3 vezes, esperando 2 segundos entre cada, a thread gerada fala "My turn" à cada 1 segundo, intercalando com 2 mensagens à cada uma do processo original
+
+    b - Agora a thread principal não espera a thread gerada acabar, então as últimas mensagens de "My turn" não aparecem.
+B)
+    1.
+    a - Agora na pthread_create ele passa po ponteiro para um inteiro como argumento, quando esse chega na função da thread em si, ele é castado (já que o argumento é pontieor para void, ou seja, pode ser qualquer coisa) de volta para ponteiro para int, apontando para o valor quando de v. A cada my turn ele sobe o valor de iptr, subindo também o valor de v.
+
+    b - Feito.
